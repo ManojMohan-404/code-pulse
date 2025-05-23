@@ -1,0 +1,16 @@
+body {
+    background: transparent;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    padding: 100px 0;
+}
+
+.pricing {
+    margin-top: 20px;
+}
+
+.course-overview {
+    margin-top: 40px;
+}
