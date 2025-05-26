@@ -3,20 +3,28 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo(0, 0);
 
     // Course Scrolling Functionality
-    const courseList = document.querySelector(".course_list1");
-    const leftBtn = document.querySelector(".left-btn1");
-    const rightBtn = document.querySelector(".right-btn1");
+    const courseList = document.querySelector(".course-list");
+    const leftBtn = document.querySelector(".left-btn");
+    const rightBtn = document.querySelector(".right-btn");
 
     if (courseList && leftBtn && rightBtn) {
-        const cardWidth = courseList.querySelector('.course-card1').offsetWidth + 20; // Card width + gap
+        // Calculate card width dynamically (including gap)
+        const cardWidth = courseList.querySelector('.course-card').offsetWidth + 20;
+
+        // Adjust scroll distance based on screen size
+        function getScrollDistance() {
+            const isDesktop = window.innerWidth >= 992;
+            // Scroll by 4 cards on desktop, 2 cards on mobile/tablet
+            return isDesktop ? cardWidth * 4 : cardWidth * 2;
+        }
 
         // Button scrolling
         leftBtn.addEventListener("click", () => {
-            courseList.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+            courseList.scrollBy({ left: -getScrollDistance(), behavior: 'smooth' });
         });
 
         rightBtn.addEventListener("click", () => {
-            courseList.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            courseList.scrollBy({ left: getScrollDistance(), behavior: 'smooth' });
         });
 
         // Mouse drag functionality
@@ -77,8 +85,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         courseList.addEventListener('scroll', updateButtonVisibility);
+        // Update button visibility on window resize
+        window.addEventListener('resize', updateButtonVisibility);
         updateButtonVisibility();
     }
+
+    // Reset scroll position on page refresh
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        if (courseList) {
+            courseList.scrollLeft = 0;
+        }
+    };
+
 
     // Promotional Slides Carousel
     const promoCarousel = document.querySelector("#promoSlides");
