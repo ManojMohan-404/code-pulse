@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Pulse - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -97,106 +98,85 @@
         </div>
     </div>
 
-    <!-- Courses Section -->
+<!-- Courses Section -->
     <section id="courses" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Featured Courses</h2>
-            <div class="course-wrapper1">
-                <button class="slide-btn1 left-btn1" aria-label="Previous course">❮</button>
-                <button class="slide-btn1 right-btn1" aria-label="Next course">❯</button>
-                <div class="course_list1" role="region" aria-label="Courses carousel">
+            <div class="course-wrapper">
+                <button class="slide-btn left-btn" aria-label="Previous course"><i class="fas fa-chevron-left"></i></button>
+                <button class="slide-btn right-btn" aria-label="Next course"><i class="fas fa-chevron-right"></i></button>
+                <div class="course-list" role="region" aria-label="Courses carousel">
                     <!-- Course Card 1 -->
-                    <div class="course-card1">
-                        <img src="source/javascript.webp" alt="JavaScript Course" class="course-image1">
-                        <div class="course-content1">
-                            <h2 class="course-title1">Master JavaScript for Web Development</h2>
-                            <p class="instructor1">By John Doe</p>
-                            <div class="rating1">⭐⭐⭐⭐⭐ 4.8 (1200 Reviews)</div>
-                            <p class="price1">₹999 <span class="old-price1">₹1999</span></p>
-                            <button class="enroll-btn1" aria-label="Enroll in Master JavaScript for Web Development " src="index-courses/Master JavaScript for Web Development.html">Enroll Now</button>
+                    <div class="course-card">
+                        <img src="https://via.placeholder.com/300x180" alt="JavaScript Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">Master JavaScript for Web Development</h3>
+                            <p class="instructor">By John Doe</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.8 (1200)</div>
+                            <p class="price">₹999 <span class="old-price">₹1999</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Master JavaScript for Web Development"><a class="a_enroll" href="login.html">Enroll Now</a></button>
                         </div>
                     </div>
                     <!-- Course Card 2 -->
-                    <div class="course-card1">
-                        <img src="source/javascript.webp" alt="HTML & CSS Course" class="course-image1">
-                        <div class="course-content1">
-                            <h2 class="course-title1">HTML & CSS: Build Responsive Websites</h2>
-                            <p class="instructor1">By Alice Smith</p>
-                            <div class="rating1">⭐⭐⭐⭐⭐ 4.5 (980 Reviews)</div>
-                            <p class="price1">₹799 <span class="old-price1">₹1799</span></p>
-                            <button class="enroll-btn1" aria-label="Enroll in HTML & CSS: Build Responsive Websites">Enroll Now</button>
+                    <div class="course-card">
+                        <img src="https://via.placeholder.com/300x180" alt="HTML & CSS Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">HTML & CSS: Build Responsive Websites</h3>
+                            <p class="instructor">By Alice Smith</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5 (980)</div>
+                            <p class="price">₹799 <span class="old-price">₹1799</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in HTML & CSS: Build Responsive Websites"><a class="a_enroll" href="login.html">Enroll Now</a></button>
                         </div>
                     </div>
                     <!-- Course Card 3 -->
-                    <div class="course-card1">
-                        <img src="source/javascript.webp" alt="React Course" class="course-image1">
-                        <div class="course-content1">
-                            <h2 class="course-title1">React Basics: Build Your First App</h2>
-                            <p class="instructor1">By Mark Johnson</p>
-                            <div class="rating1">⭐⭐⭐⭐⭐ 4.9 (1350 Reviews)</div>
-                            <p class="price1">₹1099 <span class="old-price1">₹2199</span></p>
-                            <button class="enroll-btn1" aria-label="Enroll in React Basics: Build Your First App">Enroll Now</button>
+                    <div class="course-card">
+                        <img src="https://via.placeholder.com/300x180" alt="React Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">React Basics: Build Your First App</h3>
+                            <p class="instructor">By Mark Johnson</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.9 (1350)</div>
+                            <p class="price">₹1099 <span class="old-price">₹2199</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in React Basics: Build Your First App"><a class="a_enroll" href="login.html">Enroll Now</a></button>
                         </div>
                     </div>
                     <!-- Course Card 4 -->
-                    <div class="course-card1">
-                        <img src="source/javascript.webp" alt="Node.js Course" class="course-image1">
-                        <div class="course-content1">
-                            <h2 class="course-title1">Node.js Crash Course for Beginners</h2>
-                            <p class="instructor1">By Sarah Lee</p>
-                            <div class="rating1">⭐⭐⭐⭐⭐ 4.6 (870 Reviews)</div>
-                            <p class="price1">₹899 <span class="old-price1">₹1899</span></p>
-                            <button class="enroll-btn1" aria-label="Enroll in Node.js Crash Course for Beginners">Enroll Now</button>
+                    <div class="course-card">
+                        <img src="https://via.placeholder.com/300x180" alt="Node.js Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">Node.js Crash Course for Beginners</h3>
+                            <p class="instructor">By Sarah Lee</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (870)</div>
+                            <p class="price">₹899 <span class="old-price">₹1899</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Node.js Crash Course for Beginners"><a class="a_enroll" href="login.html">Enroll Now</a></button>
                         </div>
                     </div>
                     <!-- Course Card 5 -->
-                    <div class="course-card1">
-                        <img src="source/javascript.webp" alt="Full-Stack Course" class="course-image1">
-                        <div class="course-content1">
-                            <h2 class="course-title1">Full-Stack Web Development Bootcamp</h2>
-                            <p class="instructor1">By Kevin Patel</p>
-                            <div class="rating1">⭐⭐⭐⭐⭐ 4.7 (1650 Reviews)</div>
-                            <p class="price1">₹1499 <span class="old-price1">₹2999</span></p>
-                            <button class="enroll-btn1" aria-label="Enroll in Full-Stack Web Development Bootcamp">Enroll Now</button>
+                    <div class="course-card">
+                        <img src="https://via.placeholder.com/300x180" alt="Full-Stack Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">Full-Stack Web Development Bootcamp</h3>
+                            <p class="instructor">By Kevin Patel</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.7 (1650)</div>
+                            <p class="price">₹1499 <span class="old-price">₹2999</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Full-Stack Web Development Bootcamp"><a class="a_enroll" href="login.html">Enroll Now</a></button>
                         </div>
                     </div>
                     <!-- Course Card 6 -->
-                    <div class="course-card1">
-                        <img src="source/javascript.webp" alt="Tailwind CSS Course" class="course-image1">
-                        <div class="course-content1">
-                            <h2 class="course-title1">Modern Web Design with Tailwind CSS</h2>
-                            <p class="instructor1">By Emma Wilson</p>
-                            <div class="rating1">⭐⭐⭐⭐ 4.4 (710 Reviews)</div>
-                            <p class="price1">₹699 <span class="old-price1">₹1499</span></p>
-                            <button class="enroll-btn1" aria-label="Enroll in Modern Web Design with Tailwind CSS">Enroll Now</button>
-                        </div>
-                    </div>
-                    <!-- Course Card 7 -->
-                    <div class="course-card1">
-                        <img src="source/javascript.webp" alt="Express.js Course" class="course-image1">
-                        <div class="course-content1">
-                            <h2 class="course-title1">API Development with Express.js</h2>
-                            <p class="instructor1">By David Kim</p>
-                            <div class="rating1">⭐⭐⭐⭐⭐ 4.9 (1430 Reviews)</div>
-                            <p class="price1">₹1199 <span class="old-price1">₹2299</span></p>
-                            <button class="enroll-btn1" aria-label="Enroll in API Development with Express.js">Enroll Now</button>
-                        </div>
-                    </div>
-                    <!-- Course Card 8 -->
-                    <div class="course-card1">
-                        <img src="source/javascript.webp" alt="DevTools Course" class="course-image1">
-                        <div class="course-content1">
-                            <h2 class="course-title1">Debugging and DevTools Masterclass</h2>
-                            <p class="instructor1">By Olivia Chen</p>
-                            <div class="rating1">⭐⭐⭐⭐ 4.6 (940 Reviews)</div>
-                            <p class="price1">₹849 <span class="old-price1">₹1699</span></p>
-                            <button class="enroll-btn1" aria-label="Enroll in Debugging and DevTools Masterclass">Enroll Now</button>
+                    <div class="course-card">
+                        <img src="https://via.placeholder.com/300x180" alt="Tailwind CSS Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">Modern Web Design with Tailwind CSS</h3>
+                            <p class="instructor">By Emma Wilson</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.4 (710)</div>
+                            <p class="price">₹699 <span class="old-price">₹1499</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Modern Web Design with Tailwind CSS"><a class="a_enroll" href="login.html">Enroll Now</a></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- About Us Section -->
     <section id="about" class="py-5">
