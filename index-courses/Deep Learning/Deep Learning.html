@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning A-Z 2024: Neural Networks, AI & ChatGPT Bonus</title>
+    <link rel="stylesheet" href="Deep Learning.css">
+    <!-- Bootstrap CSS for Navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- JavaScript Animation Background -->
+    <div id="code-rain"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html"><span style="color: var(--primary-color);">Code</span>pulse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup.html">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Course Details -->
+            <div class="col-lg-8">
+                <div class="course-details">
+                    <h1>Deep Learning A-Z 2024: Neural Networks, AI & ChatGPT Bonus</h1>
+                    <p>Learn to create Deep Learning Algorithms in Python from two Machine Learning & Data Science experts. Master Neural Networks, AI, and leverage ChatGPT for cutting-edge applications.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5 (183,396 ratings) | 200,000 students
+                    </div>
+                    <p>Created by <a href="#" style="color: var(--primary-color);">Kirill Eremenko</a>, <a href="#" style="color: var(--primary-color);">Hadelin de Ponteves</a>, <a href="#" style="color: var(--primary-color);">Ligency Team</a></p>
+                    <p><span class="badge bg-secondary">Bestseller</span> Updated May 2025 | 26 hours total | English</p>
+                    <!-- Sticky Buy Section -->
+                    <div class="sticky-buy">
+                        <div class="course-card">
+                            <img src="/index-courses/course logos/Deep Learning A-Z 2024 Neural Networks, AI & ChatGPT Bonus.png" alt="Deep Learning Course Image" class="course-image">
+                            <div class="course-content">
+                                <h3 class="course-title">Deep Learning A-Z 2024: Neural Networks, AI & ChatGPT Bonus</h3>
+                                <p class="instructor">By Kirill Eremenko, Hadelin de Ponteves, Ligency Team</p>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5 (183,396)</div>
+                                <p class="price">₹549 <span class="old-price">₹649</span></p>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">Discount applied with code: ST21MT30625G1</p>
+                                <button class="enroll-btn" id="add-to-cart" aria-label="Add to cart"><span class="a_enroll">Add to Cart</span></button>
+                                <button class="enroll-btn" id="buy-now" aria-label="Buy now"><span class="a_enroll">Buy Now</span></button>
+                                <p style="font-size: 0.9rem; text-align: center; margin-top: 1rem;">30-Day Money-Back Guarantee</p>
+                                <h5>This course includes:</h5>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>26 hours on-demand video</li>
+                                    <li>40 articles</li>
+                                    <li>50 downloadable resources</li>
+                                    <li>Access on mobile and TV</li>
+                                    <li>Certificate of completion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>What You'll Learn</h2>
+                    <ul>
+                        <li>Understand the intuition behind Artificial Neural Networks (ANNs).</li>
+                        <li>Master Convolutional Neural Networks (CNNs) for image processing.</li>
+                        <li>Apply Recurrent Neural Networks (RNNs) for time-series data.</li>
+                        <li>Implement Self-Organizing Maps (SOMs) for clustering.</li>
+                        <li>Use Boltzmann Machines and AutoEncoders for advanced applications.</li>
+                        <li>Leverage Generative AI and ChatGPT for cutting-edge projects.</li>
+                        <li>Make powerful predictions using deep learning models.</li>
+                        <li>Apply deep learning to real-world problems like fraud detection and image recognition.</li>
+                        <li>Use TensorFlow, Keras, and PyTorch effectively.</li>
+                    </ul>
+
+                    <h2>Course Content</h2>
+                    <p>10 sections • 120 lectures • 26h total length</p>
+                    <div class="accordion" id="courseContent" role="region" aria-label="Course content sections">
+                        <!-- Section 1: Introduction to Deep Learning -->
+                        <div class="accordion-item" style="--delay: 1;">
+                            <h2 class="accordion-header" id="section1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" aria-label="Toggle Introduction to Deep Learning section">
+                                    Introduction to Deep Learning <span class="ms-auto">8 lectures • 1h</span>
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="section1" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Welcome to the Course <span>10min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModal">Preview</button></li>
+                                        <li>What is Deep Learning? <span>12min</span></li>
+                                        <li>Setting Up Python and Libraries <span>10min</span></li>
+                                        <li>Introduction to Neural Networks <span>10min</span></li>
+                                        <li>Key Concepts in AI <span>10min</span></li>
+                                        <li>Overview of Course Projects <span>5min</span></li>
+                                        <li>Resources and Community <span>3min</span></li>
+                                        <li>Quiz: Deep Learning Basics <span>2min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 2: Artificial Neural Networks (ANNs) -->
+                        <div class="accordion-item" style="--delay: 2;">
+                            <h2 class="accordion-header" id="section2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" aria-label="Toggle Artificial Neural Networks section">
+                                    Artificial Neural Networks (ANNs) <span class="ms-auto">12 lectures • 3h</span>
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="section2" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Intuition Behind ANNs <span>15min</span></li>
+                                        <li>Building an ANN in Python <span>20min</span></li>
+                                        <li>Activation Functions <span>15min</span></li>
+                                        <li>Gradient Descent and Backpropagation <span>20min</span></li>
+                                        <li>Optimizing ANN Performance <span>15min</span></li>
+                                        <li>Hyperparameter Tuning <span>15min</span></li>
+                                        <li>Coding Challenge: ANN for Regression <span>20min</span></li>
+                                        <li>Project: Customer Churn Prediction <span>30min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalChurn">Preview</button></li>
+                                        <li>Quiz: ANNs <span>8min</span></li>
+                                        <li>Debugging ANN Models <span>12min</span></li>
+                                        <li>Code Review: ANNs <span>10min</span></li>
+                                        <li>Real-World Applications <span>10min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3: Convolutional Neural Networks (CNNs) -->
+                        <div class="accordion-item" style="--delay: 3;">
+                            <h2 class="accordion-header" id="section3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" aria-label="Toggle Convolutional Neural Networks section">
+                                    Convolutional Neural Networks (CNNs) <span class="ms-auto">12 lectures • 3h</span>
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="section3" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Intuition Behind CNNs <span>15min</span></li>
+                                        <li>Convolutional Layers <span>20min</span></li>
+                                        <li>Pooling and Fully Connected Layers <span>15min</span></li>
+                                        <li>Building a CNN in Keras <span>20min</span></li>
+                                        <li>Data Augmentation <span>15min</span></li>
+                                        <li>Transfer Learning <span>15min</span></li>
+                                        <li>Coding Challenge: Image Classification <span>20min</span></li>
+                                        <li>Project: Cat vs. Dog Classifier <span>30min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalImage">Preview</button></li>
+                                        <li>Quiz: CNNs <span>8min</span></li>
+                                        <li>Debugging CNN Models <span>12min</span></li>
+                                        <li>Code Review: CNNs <span>10min</span></li>
+                                        <li>Applications in Computer Vision <span>10min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collapsible hidden sections -->
+                    <div class="collapse" id="hiddenSections">
+                        <div class="accordion" id="hiddenCourseContent">
+                            <!-- Section 4: Recurrent Neural Networks (RNNs) -->
+                            <div class="accordion-item" style="--delay: 4;">
+                                <h2 class="accordion-header" id="section4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" aria-label="Toggle Recurrent Neural Networks section">
+                                        Recurrent Neural Networks (RNNs) <span class="ms-auto">10 lectures • 2h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="section4" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Intuition Behind RNNs <span>15min</span></li>
+                                            <li>LSTMs and GRUs <span>20min</span></li>
+                                            <li>Building an RNN in PyTorch <span>18min</span></li>
+                                            <li>Handling Sequential Data <span>15min</span></li>
+                                            <li>Time-Series Prediction <span>15min</span></li>
+                                            <li>Coding Challenge: Stock Price Prediction <span>20min</span></li>
+                                            <li>Project: Stock Price Forecaster <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalStock">Preview</button></li>
+                                            <li>Quiz: RNNs <span>8min</span></li>
+                                            <li>Debugging RNN Models <span>12min</span></li>
+                                            <li>Code Review: RNNs <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 5: Self-Organizing Maps (SOMs) -->
+                            <div class="accordion-item" style="--delay: 5;">
+                                <h2 class="accordion-header" id="section5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" aria-label="Toggle Self-Organizing Maps section">
+                                        Self-Organizing Maps (SOMs) <span class="ms-auto">10 lectures • 2h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="section5" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Intuition Behind SOMs <span>15min</span></li>
+                                            <li>Implementing SOMs in Python <span>20min</span></li>
+                                            <li>Clustering with SOMs <span>15min</span></li>
+                                            <li>Visualizing SOM Results <span>15min</span></li>
+                                            <li>Applications of SOMs <span>15min</span></li>
+                                            <li>Coding Challenge: Customer Segmentation <span>20min</span></li>
+                                            <li>Project: Market Segmentation with SOMs <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalSOM">Preview</button></li>
+                                            <li>Quiz: SOMs <span>8min</span></li>
+                                            <li>Debugging SOM Models <span>12min</span></li>
+                                            <li>Code Review: SOMs <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 6: Boltzmann Machines -->
+                            <div class="accordion-item" style="--delay: 6;">
+                                <h2 class="accordion-header" id="section6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6" aria-label="Toggle Boltzmann Machines section">
+                                        Boltzmann Machines <span class="ms-auto">10 lectures • 2h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="section6" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Intuition Behind Boltzmann Machines <span>15min</span></li>
+                                            <li>Restricted Boltzmann Machines (RBMs) <span>20min</span></li>
+                                            <li>Implementing RBMs in Python <span>18min</span></li>
+                                            <li>Energy-Based Models <span>15min</span></li>
+                                            <li>Training Boltzmann Machines <span>15min</span></li>
+                                            <li>Coding Challenge: Recommendation System <span>20min</span></li>
+                                            <li>Project: Movie Recommendation System <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalRBM">Preview</button></li>
+                                            <li>Quiz: Boltzmann Machines <span>8min</span></li>
+                                            <li>Debugging RBM Models <span>12min</span></li>
+                                            <li>Code Review: Boltzmann Machines <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 7: AutoEncoders -->
+                            <div class="accordion-item" style="--delay: 7;">
+                                <h2 class="accordion-header" id="section7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7" aria-label="Toggle AutoEncoders section">
+                                        AutoEncoders <span class="ms-auto">10 lectures • 2h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="section7" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Intuition Behind AutoEncoders <span>15min</span></li>
+                                            <li>Building AutoEncoders in TensorFlow <span>20min</span></li>
+                                            <li>Variational AutoEncoders (VAEs) <span>15min</span></li>
+                                            <li>Denoising AutoEncoders <span>15min</span></li>
+                                            <li>Applications of AutoEncoders <span>15min</span></li>
+                                            <li>Coding Challenge: Image Denoising <span>20min</span></li>
+                                            <li>Project: Image Reconstruction with AutoEncoders <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalAutoEncoder">Preview</button></li>
+                                            <li>Quiz: AutoEncoders <span>8min</span></li>
+                                            <li>Debugging AutoEncoder Models <span>12min</span></li>
+                                            <li>Code Review: AutoEncoders <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 8: Generative AI and ChatGPT -->
+                            <div class="accordion-item" style="--delay: 8;">
+                                <h2 class="accordion-header" id="section8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8" aria-label="Toggle Generative AI and ChatGPT section">
+                                        Generative AI and ChatGPT <span class="ms-auto">10 lectures • 2h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="section8" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Generative AI <span>15min</span></li>
+                                            <li>Understanding ChatGPT <span>20min</span></li>
+                                            <li>Integrating ChatGPT in Projects <span>15min</span></li>
+                                            <li>Generative Adversarial Networks (GANs) <span>15min</span></li>
+                                            <li>Building a Simple GAN <span>15min</span></li>
+                                            <li>Coding Challenge: Text Generation <span>20min</span></li>
+                                            <li>Project: AI-Powered Chatbot <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalChatbot">Preview</button></li>
+                                            <li>Quiz: Generative AI <span>8min</span></li>
+                                            <li>Debugging GAN Models <span>12min</span></li>
+                                            <li>Code Review: Generative AI <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 9: Model Deployment -->
+                            <div class="accordion-item" style="--delay: 9;">
+                                <h2 class="accordion-header" id="section9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9" aria-label="Toggle Model Deployment section">
+                                        Model Deployment <span class="ms-auto">10 lectures • 2h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="section9" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Model Deployment <span>15min</span></li>
+                                            <li>Deploying Models with Flask <span>20min</span></li>
+                                            <li>Using Cloud Platforms (AWS, GCP) <span>15min</span></li>
+                                            <li>Model Optimization for Production <span>15min</span></li>
+                                            <li>Monitoring Deployed Models <span>15min</span></li>
+                                            <li>Coding Challenge: Deploy a CNN <span>20min</span></li>
+                                            <li>Project: Fraud Detection API <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalFraud">Preview</button></li>
+                                            <li>Quiz: Model Deployment <span>8min</span></li>
+                                            <li>Debugging Deployment Issues <span>12min</span></li>
+                                            <li>Code Review: Deployment <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 10: Capstone Project -->
+                            <div class="accordion-item" style="--delay: 10;">
+                                <h2 class="accordion-header" id="section10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10" aria-label="Toggle Capstone Project section">
+                                        Capstone Project: End-to-End AI Application <span class="ms-auto">10 lectures • 3h</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="section10" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Project Overview and Planning <span>15min</span></li>
+                                            <li>Data Collection and Preprocessing <span>20min</span></li>
+                                            <li>Building a Hybrid Model (CNN+RNN) <span>25min</span></li>
+                                            <li>Integrating ChatGPT Features <span>20min</span></li>
+                                            <li>Model Training and Evaluation <span>15min</span></li>
+                                            <li>Deploying the Model <span>20min</span></li>
+                                            <li>Testing and Optimization <span>15min</span></li>
+                                            <li>Project: AI-Powered Image Captioning <span>30min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalCaptioning">Preview</button></li>
+                                            <li>Quiz: Capstone Concepts <span>8min</span></li>
+                                            <li>Code Review: Capstone Project <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-link text-decoration-none" style="color: var(--primary-color); margin: 1rem auto; display: block;" type="button" data-bs-toggle="collapse" data-bs-target="#hiddenSections" aria-expanded="false" aria-controls="hiddenSections" id="showMoreBtn">
+                        Show More Sections
+                    </button>
+
+                    <h2>Requirements</h2>
+                    <ul>
+                        <li>High school mathematics knowledge (basic algebra).</li>
+                        <li>Basic Python programming knowledge.</li>
+                        <li>No prior deep learning experience required.</li>
+                        <li>A computer with internet access and Python installed.</li>
+                    </ul>
+
+                    <h2>Description</h2>
+                    <p>Learn to create Deep Learning Algorithms in Python from two Machine Learning & Data Science experts. This comprehensive course covers Artificial Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Self-Organizing Maps, Boltzmann Machines, AutoEncoders, and Generative AI. With hands-on templates and practical projects, you'll apply deep learning to real-world problems like fraud detection, image recognition, stock price prediction, and customer segmentation.</p>
+                    <p>Updated for 2024, this course includes a special ChatGPT bonus section to leverage generative AI for cutting-edge applications. Whether you're a beginner or an experienced programmer, you'll gain the skills to build powerful deep learning models using TensorFlow, Keras, and PyTorch. No advanced math or prior AI experience is required—just basic Python and high school math. Join over 200,000 students and start your journey to mastering Deep Learning today!</p>
+                    <p>This course provides downloadable templates, datasets, and step-by-step guidance to ensure you can apply what you learn to your own data. By the end, you'll be equipped to tackle real-world AI challenges and take advantage of the latest advancements in generative AI, including ChatGPT integration.</p>
+
+                    <h2>Instructors</h2>
+                    <div class="instructor d-flex">
+                        <div class="ms-3">
+                            <h4>Kirill Eremenko</h4>
+                            <p>Data Science & Machine Learning Expert</p>
+                            <p>2,200,000 students | 20+ courses</p>
+                            <p>Kirill Eremenko is a Data Science expert with a passion for teaching practical applications of AI and machine learning. With over 2.2M students on Udemy, his courses focus on real-world problem-solving.</p>
+                        </div>
+                    </div>
+                    <div class="instructor d-flex mt-3">
+                        <div class="ms-3">
+                            <h4>Hadelin de Ponteves</h4>
+                            <p>AI & Machine Learning Specialist</p>
+                            <p>1,000,000 students | 10+ courses</p>
+                            <p>Hadelin de Ponteves is an AI enthusiast who simplifies complex machine learning concepts. His engaging teaching style has helped over 1M students master AI and deep learning.</p>
+                        </div>
+                    </div>
+                    <div class="instructor d-flex mt-3">
+                        <div class="ms-3">
+                            <h4>Ligency Team</h4>
+                            <p>Course Support & Content Creators</p>
+                            <p>500,000 students | 5+ courses</p>
+                            <p>The Ligency Team supports course updates, ensuring content is fresh and relevant. They specialize in delivering high-quality AI and data science education.</p>
+                        </div>
+                    </div>
+
+                    <h2>Student Reviews</h2>
+                    <div class="review-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                        </div>
+                        <p>"The explanations are clear, and the practical projects make it easy to apply the concepts. The ChatGPT section is a game-changer!" – Anonymous Student</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5
+                        </div>
+                        <p>"Great course for beginners and intermediates. The hands-on projects are fantastic, and the instructors break down complex topics well." – Sarah T.</p>
+                    </div>
+
+                    <!-- Related Courses -->
+                    <h2 style="color: var(--primary-color); margin-top: 3rem;">Explore More Courses</h2>
+                    <div class="related-courses-row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/Python for Data Science and Machine Learning.png" alt="Python Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">Machine Learning A-Z: Python & R</h3>
+                                    <p class="instructor">By Kirill Eremenko, Hadelin de Ponteves</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.8 (150,000)</div>
+                                    <p class="price">₹599 <span class="old-price">₹799</span></p>
+                                    <button class="enroll-btn" aria-label="Add Machine Learning course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/The-Front-End-Web-Developer-Bootcamp-HTML-CSS-JS-amp-React.jpg" alt="Python Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">The Front-End Web Developer Bootcamp: HTML, CSS, JS & React</h3>
+                                    <p class="instructor">By Jose Portilla</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.7 (120,000)</div>
+                                    <p class="price">₹699 <span class="old-price">₹749</span></p>
+                                    <button class="enroll-btn" aria-label="Add Python course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/Artificial Intelligence A-Z.png" alt="AI Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">Artificial Intelligence A-Z: Learn How To Build An AI</h3>
+                                    <p class="instructor">By Hadelin de Ponteves</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (80,000)</div>
+                                    <p class="price">₹599 <span class="old-price">₹799</span></p>
+                                    <button class="enroll-btn" aria-label="Add AI course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar (Desktop Only) -->
+            <div class="col-lg-4">
+                <div class="sticky-buy-placeholder"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modals -->
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel">Preview: Welcome to the Course</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kirill and Hadelin introduce you to the exciting world of deep learning and outline the course structure.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Video+Preview" alt="Video Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalChurn" tabindex="-1" aria-labelledby="previewModalChurnLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalChurnLabel">Preview: Customer Churn Prediction Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build an ANN to predict customer churn using real-world data.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Churn+Prediction+Preview" alt="Churn Prediction Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modals -->
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel">Preview: Welcome to the Course</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kirill and Hadelin introduce you to the exciting world of deep learning and outline the course structure.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Video+Preview" alt="Video Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalChurn" tabindex="-1" aria-labelledby="previewModalChurnLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalChurnLabel">Preview: Customer Churn Prediction Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build an ANN to predict customer churn using real-world data.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Churn+Prediction+Preview" alt="Churn Prediction Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalImage" tabindex="-1" aria-labelledby="previewModalImageLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalImageLabel">Preview: Cat vs. Dog Classifier Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Create a CNN to classify images of cats and dogs with high accuracy.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Image+Classification+Preview" alt="Image Classification Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalStock" tabindex="-1" aria-labelledby="previewModalStockLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalStockLabel">Preview: Stock Price Forecaster Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Use an RNN to predict stock prices based on historical data.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Stock+Prediction+Preview" alt="Stock Prediction Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalSOM" tabindex="-1" aria-labelledby="previewModalSOMLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalSOMLabel">Preview: Market Segmentation with SOMs Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Apply SOMs to segment customers for targeted marketing.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=SOM+Segmentation+Preview" alt="SOM Segmentation Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalRBM" tabindex="-1" aria-labelledby="previewModalRBMLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalRBMLabel">Preview: Movie Recommendation System Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build a recommendation system using Restricted Boltzmann Machines.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Recommendation+System+Preview" alt="Recommendation System Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalAutoEncoder" tabindex="-1" aria-labelledby="previewModalAutoEncoderLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalAutoEncoderLabel">Preview: Image Reconstruction with AutoEncoders Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Use AutoEncoders to reconstruct and denoise images.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=AutoEncoder+Preview" alt="AutoEncoder Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalChatbot" tabindex="-1" aria-labelledby="previewModalChatbotLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalChatbotLabel">Preview: AI-Powered Chatbot Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Integrate ChatGPT to build an intelligent chatbot for real-world applications.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Chatbot+Preview" alt="Chatbot Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalFraud" tabindex="-1" aria-labelledby="previewModalFraudLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalFraudLabel">Preview: Fraud Detection API Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Deploy a deep learning model as an API for fraud detection.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Fraud+Detection+Preview" alt="Fraud Detection Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalCaptioning" tabindex="-1" aria-labelledby="previewModalCaptioningLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalCaptioningLabel">Preview: AI-Powered Image Captioning Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build an end-to-end AI application combining CNNs, RNNs, and ChatGPT for image captioning.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Image+Captioning+Preview" alt="Image Captioning Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="custom-footer">
+        <div class="footer-grid">
+            <!-- Company Info -->
+            <div class="footer-box">
+                <h2>CODE-PULSE</h2>
+                <p><strong>NYXACADEMY TECHNOLOGIES PVT. LTD.</strong></p>
+                <p>Innovative products built for progress. Our mission is to empower small and medium businesses through intelligent tech solutions.</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>📞 <a href="tel:+91630xxxxxxx">+91 630xxxxxxx</a></p>
+                <p>✉️ <a href="mailto:info@code-pulse.in">info@code-pulse.in</a></p>
+                <p>📍 Bengaluru, Karnataka – 560101</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="footer-credits">
+            <p>© 2025 CODE-PULSE. All rights reserved.</p>
+            <p>Powered by <a href="https://www.odoo.com">Odoo</a> – #1 Open Source eCommerce</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/index-courses/background animation.js"></script>
+</body>
+</html>

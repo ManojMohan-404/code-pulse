@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pulse - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+   <!-- Bootstrap CSS for Navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+<body>
+    <!-- Particles.js Background -->
+    <div id="particles-js"></div>
+
+
+ <!-- Navigation Bar -->
+ <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span style="color: var(--primary-color);">Code</span>pulse</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#courses">courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Signup</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Welcome to Code Pulse</h1>
+            <p>Learn new skills, advance your career, and explore endless possibilities with our expert-led courses.</p>
+            <a href="#courses" class="btn btn-light btn-lg mt-3">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Promotional Slides -->
+    <div id="promoSlides" class="carousel slide promo-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <section class="promo-banner">
+                    <div class="promo-text">
+                        <h1>Best prices of the season<br><span>end today</span></h1>
+                        <p>Get skills that make you marketable. Courses from ₹399 ends soon.</p>
+                    </div>
+                    <div class="promo-image">
+                        <!-- <img src="https://via.placeholder.com/600x400?text=Promo+1" alt="Promotional offer for courses" /> -->
+                    </div>
+                </section>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <section class="promo-banner">
+                    <div class="promo-text">
+                        <h1>Learn from top instructors<br><span>anytime, anywhere</span></h1>
+                        <p>Explore thousands of courses and upskill at your own pace.</p>
+                    </div>
+                    <div class="promo-image">
+                        <!-- <img src="https://via.placeholder.com/600x400?text=Promo+2" alt="Learn from top instructors" /> -->
+                    </div>
+                </section>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <section class="promo-banner">
+                    <div class="promo-text">
+                        <h1>New to coding?<br><span>Start your journey now</span></h1>
+                        <p>Beginner-friendly courses to help you break into tech.</p>
+                    </div>
+                    <div class="promo-image">
+                        <!-- <img src="https://via.placeholder.com/600x400?text=Promo+3" alt="Beginner coding courses" /> -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#promoSlides" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#promoSlides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#promoSlides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    </div>
+
+<!-- Courses Section -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Courses</h2>
+            <div class="course-wrapper">
+                <button class="slide-btn left-btn" aria-label="Previous course"><i class="fas fa-chevron-left"></i></button>
+                <button class="slide-btn right-btn" aria-label="Next course"><i class="fas fa-chevron-right"></i></button>
+                <div class="course-list" role="region" aria-label="Courses carousel">
+                    <!-- Course Card 1 -->
+                    <div class="course-card">
+                        <img src="index-courses/course logos/c.png" alt="JavaScript Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">C Programming For Beginners - Master the C Language</h3>
+                            <p class="instructor">By Jason Fedin, Tim Buchalka</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.8 (1200)</div>
+                            <p class="price">₹549 <span class="old-price">₹799</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in C Programming For Beginners - Master the C Language"><a class="a_enroll" href="index-courses/C Programming For Beginners/C Programming For Beginners.html">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="course-card">
+                        <img src="index-courses/course logos/python.png" alt="HTML & CSS Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">Complete Python Bootcamp: Go from zero to hero in Python 3</h3>
+                            <p class="instructor">By Jose Portilla</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5 (980)</div>
+                            <p class="price">₹599 <span class="old-price">₹799</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Complete Python Bootcamp: Go from zero to hero in Python 3"><a class="a_enroll" href="index-courses/Complete Python Bootcamp From Zero to Hero/Complete Python Bootcamp From Zero to Hero.html">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 3 -->
+                    <div class="course-card">
+                        <img src="index-courses/course logos/Deep Learning A-Z 2024 Neural Networks, AI & ChatGPT Bonus.png" alt="React Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">Deep Learning A-Z 2024: Neural Networks, AI & ChatGPT Bonus</h3>
+                            <p class="instructor">By Kirill Eremenko, Hadelin de Ponteves, Ligency Team</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.9 (1350)</div>
+                            <p class="price">₹549 <span class="old-price">₹649</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Deep Learning A-Z 2024: Neural Networks, AI & ChatGPT Bonus"><a class="a_enroll" href="index-courses/Deep Learning/Deep Learning.html">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 4 -->
+                    <div class="course-card">
+                        <img src="index-courses/course logos/java.png" alt="Node.js Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">Java Programming for Complete Beginners [2025]</h3>
+                            <p class="instructor">By Ranga Karanam</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (870)</div>
+                            <p class="price">₹749 <span class="old-price">₹899</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Java Programming for Complete Beginners [2025]"><a class="a_enroll" href="index-courses/Java Programming/Java Programming.html">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 5 -->
+                    <div class="course-card">
+                        <img src="/index-courses/course logos/Javascript.png" alt="Full-Stack Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">The Complete JavaScript Course 2025: From Zero to Expert!</h3>
+                            <p class="instructor">By Jonas Schmedtmann</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.7 (1650)</div>
+                            <p class="price">₹699 <span class="old-price">₹999</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in The Complete JavaScript Course 2025: From Zero to Expert!"><a class="a_enroll" href="/index-courses/javascript/The Complete JavaScript Course.html">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 6 -->
+                    <div class="course-card">
+                        <img src="index-courses/course logos/web development.png" alt="Tailwind CSS Course" class="course-image">
+                        <div class="course-content">
+                            <h3 class="course-title">The Complete Web Development Bootcamp</h3>
+                            <p class="instructor">by Dr. Angela Yu</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.4 (710)</div>
+                            <p class="price">₹499 <span class="old-price">₹749</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in The Complete Web Development Bootcamp"><a class="a_enroll" href="index-courses/The Complete Web Development Bootcamp/The Complete Web Development Bootcamp.html">Enroll Now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="footer-grid">
+            <!-- Company Info -->
+            <div class="footer-box">
+                <h2>CODE-PULSE</h2>
+                <p><strong>NYXACADEMY TECHNOLOGIES PVT. LTD.</strong></p>
+                <p>Innovative products built for progress. Our mission is to empower small and medium businesses through intelligent tech solutions.</p>
+            </div>
+            <!-- Contact Info -->
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>📞 <a href="tel:+91630xxxxxxx">+91 630xxxxxxx</a></p>
+                <p>✉️ <a href="mailto:info@code-pulse.in">info@code-pulse.in</a></p>
+                <p>📍 Bengaluru, India – 560101</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+        <!-- Bottom Row -->
+        <div class="footer-credits">
+            <p>© 2025 CODE-PULSE. All rights reserved.</p>
+            <p>Powered by <a href="https://www.odoo.com">Odoo</a> – #1 Open Source eCommerce</p>
+        </div>
+    </footer>
+    <!-- Scripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/PromotionalSlides.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>

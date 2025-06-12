@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Python Bootcamp: Go from zero to hero in Python 3</title>
+    <link rel="stylesheet" href="Complete Python Bootcamp From Zero to Hero.css">
+    <!-- Bootstrap CSS for Navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- JavaScript Animation Background -->
+    <div id="code-rain"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html"><span style="color: var(--primary-color);">Code</span>pulse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup.html">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Course Details -->
+            <div class="col-lg-8">
+                <div class="course-details">
+                    <h1>Complete Python Bootcamp: Go from zero to hero in Python 3</h1>
+                    <p>Learn Python like a Professional! Start from the basics and go all the way to creating your own applications and games!</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.7 (471,673 ratings) | 1,820,567 students
+                    </div>
+                    <p>Created by <a href="#" style="color: var(--primary-color);">Jose Portilla</a></p>
+                    <p><span class="badge bg-secondary">Bestseller</span> Updated June 2025 | 24 hours total | English</p>
+                    <!-- Sticky Buy Section -->
+                    <div class="sticky-buy">
+                        <div class="course-card">
+                            <img src="/index-courses/course logos/python.png" alt="Python Course Image" class="course-image">
+                            <div class="course-content">
+                                <h3 class="course-title">Complete Python Bootcamp: Go from zero to hero in Python 3</h3>
+                                <p class="instructor">By Jose Portilla</p>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.7 (471,673)</div>
+                                <p class="price">₹599 <span class="old-price">₹799</span></p>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">Discount applied with code: ST21MT30625G1</p>
+                                <button class="enroll-btn" id="add-to-cart" aria-label="Add to cart"><span class="a_enroll">Add to Cart</span></button>
+                                <button class="enroll-btn" id="buy-now" aria-label="Buy now"><span class="a_enroll">Buy Now</span></button>
+                                <p style="font-size: 0.9rem; text-align: center; margin-top: 1rem;">30-Day Money-Back Guarantee</p>
+                                <h5>This course includes:</h5>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>24 hours on-demand video</li>
+                                    <li>19 articles</li>
+                                    <li>150+ downloadable resources</li>
+                                    <li>Access on mobile and TV</li>
+                                    <li>Certificate of completion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>What You'll Learn</h2>
+                    <ul>
+                        <li>Master Python 3 fundamentals: variables, data types, loops, and conditionals.</li>
+                        <li>Understand Object-Oriented Programming (OOP) with classes, objects, and inheritance.</li>
+                        <li>Build real-world projects like Blackjack, Tic-Tac-Toe, and data analysis tools.</li>
+                        <li>Work with Python modules and libraries like Pandas, Matplotlib, and NumPy.</li>
+                        <li>Automate tasks such as file handling, sending emails, and web scraping.</li>
+                        <li>Create GUI applications using Jupyter Notebooks.</li>
+                        <li>Handle errors and debug code effectively.</li>
+                        <li>Develop a portfolio of Python projects to showcase for job applications.</li>
+                    </ul>
+
+                    <h2>Course Content</h2>
+                    <p>34 sections • 150+ lectures • 24h total length</p>
+                    <div class="accordion" id="courseContent" role="region" aria-label="Course content sections">
+                        <!-- Section 1: Course Introduction -->
+                        <div class="accordion-item" style="--delay: 1;">
+                            <h2 class="accordion-header" id="section1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" aria-label="Toggle Course Introduction section">
+                                    Course Introduction <span class="ms-auto">5 lectures • 30min</span>
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="section1" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Welcome to the Course <span>6min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModal">Preview</button></li>
+                                        <li>Why Python? <span>8min</span></li>
+                                        <li>Python 2 vs Python 3 Overview <span>8min</span></li>
+                                        <li>Setting Up Python Environment <span>10min</span></li>
+                                        <li>Course FAQs and Resources <span>5min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 2: Python Basics -->
+                        <div class="accordion-item" style="--delay: 2;">
+                            <h2 class="accordion-header" id="section2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" aria-label="Toggle Python Basics section">
+                                    Python Basics <span class="ms-auto">12 lectures • 2h</span>
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="section2" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Your First Python Program <span>10min</span></li>
+                                        <li>Variables and Data Types <span>15min</span></li>
+                                        <li>Numbers and Operators <span>12min</span></li>
+                                        <li>Strings and Formatting <span>15min</span></li>
+                                        <li>Coding Exercise: Basic Operations <span>10min</span></li>
+                                        <li>Lists, Tuples, and Sets <span>15min</span></li>
+                                        <li>Dictionaries <span>12min</span></li>
+                                        <li>Project: Simple To-Do List <span>20min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalToDo">Preview</button></li>
+                                        <li>Quiz: Python Basics <span>5min</span></li>
+                                        <li>Comments and Best Practices <span>8min</span></li>
+                                        <li>Boolean Logic <span>10min</span></li>
+                                        <li>Code Review: Basics <span>8min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3: Control Flow -->
+                        <div class="accordion-item" style="--delay: 3;">
+                            <h2 class="accordion-header" id="section3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" aria-label="Toggle Control Flow section">
+                                    Control Flow <span class="ms-auto">10 lectures • 1h 30m</span>
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="section3" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>If, Elif, Else Statements <span>12min</span></li>
+                                        <li>Nested Conditionals <span>10min</span></li>
+                                        <li>For Loops <span>12min</span></li>
+                                        <li>While Loops <span>10min</span></li>
+                                        <li>Break, Continue, Pass <span>8min</span></li>
+                                        <li>List Comprehensions <span>10min</span></li>
+                                        <li>Coding Exercise: Loop Challenges <span>10min</span></li>
+                                        <li>Project: Number Guessing Game <span>15min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalGame">Preview</button></li>
+                                        <li>Quiz: Control Flow <span>5min</span></li>
+                                        <li>Code Review: Control Flow <span>8min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collapsible hidden sections -->
+                    <div class="collapse" id="hiddenSections">
+                        <div class="accordion" id="hiddenCourseContent">
+                            <!-- Section 4: Functions -->
+                            <div class="accordion-item" style="--delay: 4;">
+                                <h2 class="accordion-header" id="section4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" aria-label="Toggle Functions section">
+                                        Functions <span class="ms-auto">10 lectures • 1h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="section4" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Defining Functions <span>12min</span></li>
+                                            <li>Parameters and Arguments <span>10min</span></li>
+                                            <li>Return Statements <span>10min</span></li>
+                                            <li>Lambda Functions <span>8min</span></li>
+                                            <li>*args and **kwargs <span>12min</span></li>
+                                            <li>Scope and Global Variables <span>10min</span></li>
+                                            <li>Coding Exercise: Function Challenges <span>10min</span></li>
+                                            <li>Project: Calculator App <span>15min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalCalculator">Preview</button></li>
+                                            <li>Quiz: Functions <span>5min</span></li>
+                                            <li>Code Review: Functions <span>8min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 5: Object-Oriented Programming -->
+                            <div class="accordion-item" style="--delay: 5;">
+                                <h2 class="accordion-header" id="section5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" aria-label="Toggle Object-Oriented Programming section">
+                                        Object-Oriented Programming <span class="ms-auto">12 lectures • 2h</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="section5" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to OOP <span>15min</span></li>
+                                            <li> classes and Objects <span>15min</span></li>
+                                            <li>Attributes and Methods <span>12min</span></li>
+                                            <li>Inheritance <span>15min</span></li>
+                                            <li>Polymorphism <span>12min</span></li>
+                                            <li>Encapsulation <span>10min</span></li>
+                                            <li>Magic Methods <span>10min</span></li>
+                                            <li>Coding Exercise: OOP Design <span>12min</span></li>
+                                            <li>Project: Blackjack Game <span>20min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalBlackjack">Preview</button></li>
+                                            <li>Quiz: OOP Concepts <span>5min</span></li>
+                                            <li>Class Methods and Static Methods <span>10min</span></li>
+                                            <li>Code Review: OOP Projects <span>8min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 6: Modules and Packages -->
+                            <div class="accordion-item" style="--delay: 6;">
+                                <h2 class="accordion-header" id="section6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6" aria-label="Toggle Modules and Packages section">
+                                        Modules and Packages <span class="ms-auto">8 lectures • 1h</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="section6" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Modules <span>12min</span></li>
+                                            <li>Importing Modules <span>10min</span></li>
+                                            <li>Creating Custom Modules <span>12min</span></li>
+                                            <li>Understanding Packages <span>10min</span></li>
+                                            <li>__init__.py File <span>8min</span></li>
+                                            <li>Coding Exercise: Module Creation <span>10min</span></li>
+                                            <li>Project: Personal Library Module <span>15min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalLibrary">Preview</button></li>
+                                            <li>Quiz: Modules and Packages <span>5min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 7: File Handling and Errors -->
+                            <div class="accordion-item" style="--delay: 7;">
+                                <h2 class="accordion-header" id="section7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7" aria-label="Toggle File Handling and Errors section">
+                                        File Handling and Errors <span class="ms-auto">10 lectures • 1h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="section7" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Reading and Writing Files <span>12min</span></li>
+                                            <li>Working with CSV Files <span>10min</span></li>
+                                            <li>Try-Except Blocks <span>12min</span></li>
+                                            <li>Raising Exceptions <span>10min</span></li>
+                                            <li>Custom Exceptions <span>8min</span></li>
+                                            <li>Working with JSON <span>10min</span></li>
+                                            <li>Coding Exercise: File Operations <span>10min</span></li>
+                                            <li>Project: File Organizer Script <span>15min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalOrganizer">Preview</button></li>
+                                            <li>Quiz: File Handling and Errors <span>5min</span></li>
+                                            <li>Code Review: File Projects <span>8min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 8: Python Libraries -->
+                            <div class="accordion-item" style="--delay: 8;">
+                                <h2 class="accordion-header" id="section8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8" aria-label="Toggle Python Libraries section">
+                                        Python Libraries <span class="ms-auto">12 lectures • 2h</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="section8" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Libraries <span>12min</span></li>
+                                            <li>Pandas for Data Analysis <span>15min</span></li>
+                                            <li>NumPy for Numerical Data <span>15min</span></li>
+                                            <li>Matplotlib for Data Visualization <span>12min</span></li>
+                                            <li>Requests for Web Scraping <span>12min</span></li>
+                                            <li>Beautiful Soup Basics <span>10min</span></li>
+                                            <li>Coding Exercise: Data Analysis <span>10min</span></li>
+                                            <li>Project: Stock Price Analyzer <span>20min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalStock">Preview</button></li>
+                                            <li>Quiz: Python Libraries <span>5min</span></li>
+                                            <li>Seaborn for Advanced Visuals <span>10min</span></li>
+                                            <li>Working with APIs <span>12min</span></li>
+                                            <li>Code Review:HASE Library Projects <span>8min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 9: Advanced Python -->
+                            <div class="accordion-item" style="--delay: 9;">
+                                <h2 class="accordion-header" id="section9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9" aria-label="Toggle Advanced Python section">
+                                        Advanced Python <span class="ms-auto">10 lectures • 1h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="section9" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Decorators <span>12min</span></li>
+                                            <li>Generators <span>12min</span></li>
+                                            <li>Iterators <span>10min</span></li>
+                                            <li>Regular Expressions <span>12min</span></li>
+                                            <li>Multithreading Basics <span>10min</span></li>
+                                            <li>Working with Databases <span>12min</span></li>
+                                            <li>Coding Exercise: Advanced Challenges <span>10min</span></li>
+                                            <li>Project: Email Automation Script <span>15min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalEmail">Preview</button></li>
+                                            <li>Quiz: Advanced Python <span>5min</span></li>
+                                            <li>Code Review: Advanced Projects <span>8min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 10: Additional Topics and Projects -->
+                            <div class="accordion-item" style="--delay: 10;">
+                                <h2 class="accordion-header" id="section10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10" aria-label="Toggle Additional Topics and Projects section">
+                                        Additional Topics and Projects <span class="ms-auto">100+ lectures • 14h</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="section10" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>GUI Development with Tkinter <span>15min</span></li>
+                                            <li>Web Development with Flask <span>20min</span></li>
+                                            <li>Data Science with Pandas and NumPy <span>20min</span></li>
+                                            <li>Game Development: Tic-Tac-Toe <span>15min</span></li>
+                                            <li>Project: Web Scraper for News Sites <span>20min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalScraper">Preview</button></li>
+                                            <li>Project: PDF File Manipulator <span>20min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalPDF">Preview</button></li>
+                                            <li>Additional Coding Challenges <span>30min</span></li>
+                                            <li>Quiz: Additional Topics <span>5min</span></li>
+                                            <li>Code Review: Advanced Projects <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-link text-decoration-none" style="color: var(--primary-color); margin: 1rem auto; display: block;" type="button" data-bs-toggle="collapse" data-bs-target="#hiddenSections" aria-expanded="false" aria-controls="hiddenSections" id="showMoreBtn">
+                        Show More Sections
+                    </button>
+
+                    <h2>Requirements</h2>
+                    <ul>
+                        <li>No prior programming experience needed - this course is designed for absolute beginners.</li>
+                        <li>A computer with Windows, macOS, or Linux and internet access.</li>
+                        <li>Basic computer skills (e.g., installing software, managing files).</li>
+                        <li>Free software: Python 3 and a text editor or IDE like Jupyter Notebook.</li>
+                    </ul>
+
+                    <h2>Description</h2>
+                    <p>Welcome to the Complete Python Bootcamp: Go from zero to hero in Python 3, the most comprehensive and beginner-friendly Python course on Udemy! With over 1.8 million students and a 4.7 rating, this 24-hour course takes you from no programming experience to building real-world Python applications. Learn Python 3 through 150+ lectures, quizzes, coding exercises, and three major projects, including Blackjack and data analysis tools. Master fundamentals, Object-Oriented Programming, and libraries like Pandas, NumPy, and Matplotlib. Automate tasks, scrape websites, and create GUIs using Jupyter Notebooks. Build a portfolio to showcase your skills and prepare for a career in web development, data science, or automation. Join now and start coding today!</p>
+
+                    <h2>Instructors</h2>
+                    <div class="instructor d-flex">
+                        <div class="ms-3">
+                            <h4>Jose Portilla</h4>
+                            <p>Head of Data Science, Pierian Training</p>
+                            <p>2,000,000+ students | 30+ courses</p>
+                            <p>Jose Portilla is the Head of Data Science at Pierian Training and has taught over 2 million students across 30+ courses on Udemy, covering Python, data science, and machine learning.</p>
+                        </div>
+                    </div>
+
+                    <h2>Student Reviews</h2>
+                    <div class="review-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                        </div>
+                        <p>"Jose’s teaching style is amazing! The projects and exercises made Python so easy to learn. Highly recommend!" – Sarah L.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5
+                        </div>
+                        <p>"This course is a goldmine! The real-world projects helped me land my first data science internship." – Michael T.</p>
+                    </div>
+
+                    <!-- Related Courses -->
+                    <h2 style="color: var(--primary-color); margin-top: 3rem;">Explore More Courses</h2>
+                    <div class="related-courses-row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/c.png" alt="C Programming Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">C Programming For Beginners - Master the C Language</h3>
+                                    <p class="instructor">By Jason Fedin</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (10,000)</div>
+                                    <p class="price">₹599 <span class="old-price">₹799</span></p>
+                                    <button class="enroll-btn" aria-label="Add C Programming course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/Javascript.png" alt="JavaScript Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">The Complete JavaScript Course 2025: From Zero to Expert!</h3>
+                                    <p class="instructor">By Jonas Schmedtmann</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.8 (185,432)</div>
+                                    <p class="price">₹799 <span class="old-price">₹899</span></p>
+                                    <button class="enroll-btn" aria-label="Add JavaScript course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/java.png" alt="Java Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">Java Programming Masterclass</h3>
+                                    <p class="instructor">By Tim Buchalka</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (120,000)</div>
+                                    <p class="price">₹699 <span class="old-price">₹799</span></p>
+                                    <button class="enroll-btn" aria-label="Add Java course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar (Desktop Only) -->
+            <div class="col-lg-4">
+                <div class="sticky-buy-placeholder"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modals -->
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel">Preview: Welcome to the Course</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>In this introductory lecture, Jose Portilla welcomes you to the course and outlines the journey of mastering Python 3 from scratch.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Video+Preview" alt="Video Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalToDo" tabindex="-1" aria-labelledby="previewModalToDoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalToDoLabel">Preview: Simple To-Do List Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build a simple to-do list application to practice Python lists, dictionaries, and user input handling.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=ToDo+List+Preview" alt="To-Do List Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalGame" tabindex="-1" aria-labelledby="previewModalGameLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalGameLabel">Preview: Number Guessing Game Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Create an interactive number guessing game to master Python control flow and loops.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Game+Preview" alt="Game Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalCalculator" tabindex="-1" aria-labelledby="previewModalCalculatorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalCalculatorLabel">Preview: Calculator App Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Develop a calculator application to practice Python functions and user input processing.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Calculator+Preview" alt="Calculator Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalBlackjack" tabindex="-1" aria-labelledby="previewModalBlackjackLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalBlackjackLabel">Preview: Blackjack Game Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build a Blackjack game to apply Object-Oriented Programming concepts like classes and inheritance.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Blackjack+Preview" alt="Blackjack Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalLibrary" tabindex="-1" aria-labelledby="previewModalLibraryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLibraryLabel">Preview: Personal Library Module Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Create a custom Python module for managing a personal library to practice module creation and packages.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Library+Preview" alt="Library Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalOrganizer" tabindex="-1" aria-labelledby="previewModalOrganizerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalOrganizerLabel">Preview: File Organizer Script Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Develop a script to organize files by type to master file handling and automation in Python.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Organizer+Preview" alt="Organizer Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalStock" tabindex="-1" aria-labelledby="previewModalStockLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalStockLabel">Preview: Stock Price Analyzer Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build a stock price analyzer using Pandas and Matplotlib to practice data analysis and visualization.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Stock+Analyzer+Preview" alt="Stock Analyzer Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalEmail" tabindex="-1" aria-labelledby="previewModalEmailLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalEmailLabel">Preview: Email Automation Script Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Create an email automation script to practice advanced Python and task automation.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Email+Automation+Preview" alt="Email Automation Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalScraper" tabindex="-1" aria-labelledby="previewModalScraperLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalScraperLabel">Preview: Web Scraper for News Sites Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build a web scraper for news sites to practice Python web scraping techniques.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Web+Scraper+Preview" alt="Web Scraper Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalPDF" tabindex="-1" aria-labelledby="previewModalPDFLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalPDFLabel">Preview: PDF File Manipulator Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Develop a PDF file manipulator to practice file handling in Python.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=PDF+Manipulator+Preview" alt="PDF Manipulator Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="footer-grid">
+            <!-- Company Info -->
+            <div class="footer-box">
+                <h2>CODE-PULSE</h2>
+                <p><strong>NYXACADEMY TECHNOLOGIES PVT. LTD.</strong></p>
+                <p>Innovative products built for progress. Our mission is to empower small and medium businesses through intelligent tech solutions.</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>📞 <a href="tel:+91630xxxxxxx">+91 630xxxxxxx</a></p>
+                <p>✉️ <a href="mailto:info@code-pulse.in">info@code-pulse.in</a></p>
+                <p>📍 Bengaluru, India – 560101</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="footer-credits">
+            <p>© 2025 CODE-PULSE. All rights reserved.</p>
+            <p>Powered by <a href="https://www.odoo.com">Odoo</a> – #1 Open Source eCommerce</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script class="code-rain" src="/index-courses/background animation.js"></script>
+</body>
+</html>

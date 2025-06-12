@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming For Beginners - Master the C Language</title>
+    <link rel="stylesheet" href="C Programming For Beginners.css">
+    <!-- Bootstrap CSS for Navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- JavaScript Animation Background -->
+    <div id="code-rain"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html"><span style="color: var(--primary-color);">Code</span>pulse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signup.html">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Course Details -->
+            <div class="col-lg-8">
+                <div class="course-details">
+                    <h1>C Programming For Beginners - Master the C Language</h1>
+                    <p>C Programming will increase career options. Become a better developer in other languages by learning C. Pointers explained. Learn the fundamentals of the C Programming Language and make yourself more marketable for entry-level programming positions.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (10,000 ratings) | 10,000 students
+                    </div>
+                    <p>Created by <a href="#" style="color: var(--primary-color);">Jason Fedin</a>, <a href="#" style="color: var(--primary-color);">Tim Buchalka</a></p>
+                    <p><span class="badge bg-secondary">Bestseller</span> Updated May 2025 | 26 hours total | English</p>
+                    <!-- Sticky Buy Section -->
+                    <div class="sticky-buy">
+                        <div class="course-card">
+                            <img src="/index-courses/course logos/c.png" alt="C Programming Course Image" class="course-image">
+                            <div class="course-content">
+                                <h3 class="course-title">C Programming For Beginners - Master the C Language</h3>
+                                <p class="instructor">By Jason Fedin, Tim Buchalka</p>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (10,000)</div>
+                                <p class="price">₹549 <span class="old-price">₹799</span></p>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">Discount applied with code: ST21MT30625G1</p>
+                                <button class="enroll-btn" id="add-to-cart" aria-label="Add to cart"><span class="a_enroll">Add to Cart</span></button>
+                                <button class="enroll-btn" id="buy-now" aria-label="Buy now"><span class="a_enroll">Buy Now</span></button>
+                                <p style="font-size: 0.9rem; text-align: center; margin-top: 1rem;">30-Day Money-Back Guarantee</p>
+                                <h5>This course includes:</h5>
+                                <ul style="font-size: 0.9rem;">
+                                    <li>26 hours on-demand video</li>
+                                    <li>50 articles</li>
+                                    <li>60 downloadable resources</li>
+                                    <li>Access on mobile and TV</li>
+                                    <li>Certificate of completion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>What You'll Learn</h2>
+                    <ul>
+                        <li>Understand the fundamentals of the C Programming Language.</li>
+                        <li>Master variables and different data types in C.</li>
+                        <li>Utilize functions and arrays effectively.</li>
+                        <li>Grasp the concept of pointers and their applications.</li>
+                        <li>Learn control flow, including decision statements and iteration.</li>
+                        <li>Write high-quality code and become an excellent problem solver.</li>
+                        <li>Apply for real-time programming positions with confidence.</li>
+                        <li>Deepen understanding of C for those with prior experience.</li>
+                    </ul>
+
+                    <h2>Course Content</h2>
+                    <p>10 sections • 96 lectures • 21h 30m total length</p>
+                    <div class="accordion" id="courseContent" role="region" aria-label="Course content sections">
+                        <!-- Section 1: Introduction to C Programming -->
+                        <div class="accordion-item" style="--delay: 1;">
+                            <h2 class="accordion-header" id="section1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" aria-label="Toggle Introduction to C Programming section">
+                                    Introduction to C Programming <span class="ms-auto">8 lectures • 1h</span>
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="section1" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Welcome to the Course <span>10min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModal">Preview</button></li>
+                                        <li>Setting Up Your C Environment <span>8min</span></li>
+                                        <li>Why Learn C? <span>12min</span></li>
+                                        <li>Your First C Program <span>10min</span></li>
+                                        <li>Understanding C Syntax <span>10min</span></li>
+                                        <li>Compiling and Running C Code <span>5min</span></li>
+                                        <li>Resources and Community <span>3min</span></li>
+                                        <li>Quiz: C Basics <span>2min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 2: Variables and Data Types -->
+                        <div class="accordion-item" style="--delay: 2;">
+                            <h2 class="accordion-header" id="section2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2" aria-label="Toggle Variables and Data Types section">
+                                    Variables and Data Types <span class="ms-auto">10 lectures • 2h</span>
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="section2" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Introduction to Variables <span>15min</span></li>
+                                        <li>Data Types in C <span>20min</span></li>
+                                        <li>Declaring and Initializing Variables <span>15min</span></li>
+                                        <li>Constants in C <span>10min</span></li>
+                                        <li>Type Casting <span>12min</span></li>
+                                        <li>Coding Challenge: Variable Manipulation <span>20min</span></li>
+                                        <li>Project: Simple Calculator <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalCalculator">Preview</button></li>
+                                        <li>Quiz: Variables and Data Types <span>8min</span></li>
+                                        <li>Debugging Variable Issues <span>10min</span></li>
+                                        <li>Code Review: Variables <span>10min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3: Control Flow -->
+                        <div class="accordion-item" style="--delay: 3;">
+                            <h2 class="accordion-header" id="section3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3" aria-label="Toggle Control Flow section">
+                                    Control Flow <span class="ms-auto">12 lectures • 3h</span>
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="section3" data-bs-parent="#courseContent">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Introduction to Control Flow <span>15min</span></li>
+                                        <li>If-Else Statements <span>20min</span></li>
+                                        <li>Switch Statements <span>15min</span></li>
+                                        <li>For Loops <span>20min</span></li>
+                                        <li>While and Do-While Loops <span>18min</span></li>
+                                        <li>Nested Loops <span>15min</span></li>
+                                        <li>Break and Continue <span>10min</span></li>
+                                        <li>Coding Challenge: Pattern Printing <span>20min</span></li>
+                                        <li>Project: Number Guessing Game <span>30min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalGame">Preview</button></li>
+                                        <li>Quiz: Control Flow <span>8min</span></li>
+                                        <li>Debugging Control Flow <span>12min</span></li>
+                                        <li>Code Review: Control Structures <span>10min</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collapsible hidden sections -->
+                    <div class="collapse" id="hiddenSections">
+                        <div class="accordion" id="hiddenCourseContent">
+                            <!-- Section 4: Functions -->
+                            <div class="accordion-item" style="--delay: 4;">
+                                <h2 class="accordion-header" id="section4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4" aria-label="Toggle Functions section">
+                                        Functions <span class="ms-auto">10 lectures • 2h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="section4" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Functions <span>15min</span></li>
+                                            <li>Defining and Calling Functions <span>20min</span></li>
+                                            <li>Function Parameters and Return Values <span>18min</span></li>
+                                            <li>Scope and Lifetime of Variables <span>15min</span></li>
+                                            <li>Recursive Functions <span>20min</span></li>
+                                            <li>Coding Challenge: Factorial Calculation <span>20min</span></li>
+                                            <li>Project: Math Utility Library <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalLibrary">Preview</button></li>
+                                            <li>Quiz: Functions <span>8min</span></li>
+                                            <li>Debugging Functions <span>12min</span></li>
+                                            <li>Code Review: Functions <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 5: Arrays -->
+                            <div class="accordion-item" style="--delay: 5;">
+                                <h2 class="accordion-header" id="section5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5" aria-label="Toggle Arrays section">
+                                        Arrays <span class="ms-auto">10 lectures • 2h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="section5" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Arrays <span>15min</span></li>
+                                            <li>Declaring and Initializing Arrays <span>20min</span></li>
+                                            <li>Accessing Array Elements <span>15min</span></li>
+                                            <li>Multi-Dimensional Arrays <span>18min</span></li>
+                                            <li>Arrays and Functions <span>20min</span></li>
+                                            <li>Coding Challenge: Array Sorting <span>20min</span></li>
+                                            <li>Project: Student Grade Manager <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalGrades">Preview</button></li>
+                                            <li>Quiz: Arrays <span>8min</span></li>
+                                            <li>Debugging Array Issues <span>12min</span></li>
+                                            <li>Code Review: Arrays <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 6: Pointers -->
+                            <div class="accordion-item" style="--delay: 6;">
+                                <h2 class="accordion-header" id="section6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6" aria-label="Toggle Pointers section">
+                                        Pointers <span class="ms-auto">12 lectures • 3h</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="section6" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Pointers <span>15min</span></li>
+                                            <li>Pointer Declaration and Initialization <span>20min</span></li>
+                                            <li>Pointer Arithmetic <span>15min</span></li>
+                                            <li>Pointers and Arrays <span>18min</span></li>
+                                            <li>Pointers and Functions <span>20min</span></li>
+                                            <li>Dynamic Memory Allocation <span>15min</span></li>
+                                            <li>Coding Challenge: Pointer Manipulation <span>20min</span></li>
+                                            <li>Project: Dynamic Array Manager <span>25min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalDynamic">Preview</button></li>
+                                            <li>Quiz: Pointers <span>8min</span></li>
+                                            <li>Debugging Pointer Issues <span>12min</span></li>
+                                            <li>Memory Leaks and Best Practices <span>10min</span></li>
+                                            <li>Code Review: Pointers <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 7: Strings -->
+                            <div class="accordion-item" style="--delay: 7;">
+                                <h2 class="accordion-header" id="section7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7" aria-label="Toggle Strings section">
+                                        Strings <span class="ms-auto">8 lectures • 1h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="section7" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Strings <span>12min</span></li>
+                                            <li>String Manipulation Functions <span>15min</span></li>
+                                            <li>Strings and Pointers <span>12min</span></li>
+                                            <li>Common String Operations <span>15min</span></li>
+                                            <li>Coding Challenge: String Reversal <span>15min</span></li>
+                                            <li>Project: Text Analyzer <span>20min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalText">Preview</button></li>
+                                            <li>Quiz: Strings <span>6min</span></li>
+                                            <li>Code Review: Strings <span>8min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 8: Structures and Unions -->
+                            <div class="accordion-item" style="--delay: 8;">
+                                <h2 class="accordion-header" id="section8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8" aria-label="Toggle Structures and Unions section">
+                                        Structures and Unions <span class="ms-auto">8 lectures • 1h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="section8" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to Structures <span>12min</span></li>
+                                            <li>Defining and Using Structures <span>15min</span></li>
+                                            <li>Structures and Pointers <span>12min</span></li>
+                                            <li>Introduction to Unions <span>15min</span></li>
+                                            <li>Coding Challenge: Structure Manipulation <span>15min</span></li>
+                                            <li>Project: Employee Database <span>20min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalDatabase">Preview</button></li>
+                                            <li>Quiz: Structures and Unions <span>6min</span></li>
+                                            <li>Code Review: Structures <span>8min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 9: File Input/Output -->
+                            <div class="accordion-item" style="--delay: 9;">
+                                <h2 class="accordion-header" id="section9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9" aria-label="Toggle File Input/Output section">
+                                        File Input/Output <span class="ms-auto">8 lectures • 1h 30m</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="section9" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Introduction to File I/O <span>12min</span></li>
+                                            <li>Reading and Writing Files <span>15min</span></li>
+                                            <li>File Modes and Operations <span>12min</span></li>
+                                            <li>Binary File Handling <span>15min</span></li>
+                                            <li>Coding Challenge: File Processing <span>15min</span></li>
+                                            <li>Project: File-Based To-Do List <span>20min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalToDo">Preview</button></li>
+                                            <li>Quiz: File I/O <span>6min</span></li>
+                                            <li>Code Review: File Handling <span>8min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Section 10: Capstone Project -->
+                            <div class="accordion-item" style="--delay: 10;">
+                                <h2 class="accordion-header" id="section10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10" aria-label="Toggle Capstone Project section">
+                                        Capstone Project: Console-Based Application <span class="ms-auto">10 lectures • 3h</span>
+                                    </button>
+                                </h2>
+                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="section10" data-bs-parent="#hiddenCourseContent">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Project Overview and Planning <span>15min</span></li>
+                                            <li>Designing the Application <span>20min</span></li>
+                                            <li>Implementing Core Features <span>25min</span></li>
+                                            <li>Using Pointers and Structures <span>20min</span></li>
+                                            <li>File Handling in the Project <span>15min</span></li>
+                                            <li>Testing and Debugging <span>20min</span></li>
+                                            <li>Optimizing Code <span>15min</span></li>
+                                            <li>Project: Library Management System <span>30min</span> <button class="preview-btn" data-bs-toggle="modal" data-bs-target="#previewModalLibrarySystem">Preview</button></li>
+                                            <li>Quiz: Capstone Concepts <span>8min</span></li>
+                                            <li>Code Review: Capstone Project <span>10min</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-link text-decoration-none" style="color: var(--primary-color); margin: 1rem auto; display: block;" type="button" data-bs-toggle="collapse" data-bs-target="#hiddenSections" aria-expanded="false" aria-controls="hiddenSections" id="showMoreBtn">
+                        Show More Sections
+                    </button>
+
+                    <h2>Requirements</h2>
+                    <ul>
+                        <li>No programming experience needed - all concepts are taught in this class.</li>
+                        <li>A computer with access to the internet.</li>
+                        <li>No paid software required - free tools like GCC compiler will be used.</li>
+                        <li>Patience and persistence to practice coding and debug errors.</li>
+                    </ul>
+
+                    <h2>Description</h2>
+                    <p>Have you never programmed a computer before, and think or have been told that C is a good programming language to get started with? It is! Maybe you have some experience with other programming languages, but want to learn C. It's a great language to add to your resume! Or perhaps you are stuck in a low-paying programming job, and want to move up to a better, more senior position. Learning C can help you! The fact is, learning how to program in C is not only an excellent programming language to get started with, but it will also make you a better programmer in other computer languages!</p>
+                    <p>C is often considered to be the mother of all languages because so many other languages have been based on it. By the end of this course, you will understand the fundamentals of the C Programming Language, and make yourself more marketable for entry-level programming positions. You will understand variables and the different data types, be able to utilize functions and arrays, understand the concept of pointers, learn about control flow (decision statements and iteration). You will be in a position to apply for real-time programming positions, and truly understand the core language that most modern languages are based on!</p>
+                    <p>If you have previously used the C programming language, then this course will deepen your understanding of it. If you have never used it, no problem, you will see that it can help you become a more efficient C developer. The course will be constantly refined in the future based on student feedback! This course does not skip on the details. You will learn how to write high-quality code and become an excellent problem solver. This course does not just present how to code in the C programming language, but also includes all the details on "why" you are doing the things you are doing. At the end of this course, you will fully understand the concepts of the C Programming language.</p>
+                    <p>If you are ready to get that first paid programming job, or to move up to a more senior programming position, then this course is for you! Click the Signup button to sign up for the course! Anyone looking to learn how to program in the C language.</p>
+
+                    <h2>Instructors</h2>
+                    <div class="instructor d-flex">
+                        <div class="ms-3">
+                            <h4>Jason Fedin</h4>
+                            <p>Software Developer and Instructor</p>
+                            <p>10,000 students | 1 course</p>
+                            <p>Jason Fedin has been teaching students for over 12 years via online classes at over 10 different online Universities. He has created many different class curriculums, ranging from mobile programming to bash scripting to Object-Oriented Design and of course the C programming language. Additionally, he has been developing software for over 16 years in the real world at various companies, specializing in Object-Oriented Development and Mobile Applications.</p>
+                        </div>
+                    </div>
+                    <div class="instructor d-flex mt-3">
+                        <div class="ms-3">
+                            <h4>Tim Buchalka</h4>
+                            <p>Software Developer and Lead Instructor</p>
+                            <p>2,200,000 students | 10+ courses</p>
+                            <p>The Learn Programming Academy was created by Tim Buchalka, a software developer with 40 years experience, who is also an instructor on Udemy, with over 2.2M+ students in his courses on Java, Python, Android, C# and the Spring framework.</p>
+                        </div>
+                    </div>
+
+                    <h2>Student Reviews</h2>
+                    <div class="review-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
+                        </div>
+                        <p>"Very engaging and teaches the course in a manner that's very easy to pick up. It doesn’t matter if some lectures are beginner level or more advanced programming concepts. Jason makes it engaging and enjoyable to learn." – Anonymous Student</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5
+                        </div>
+                        <p>"This course is perfect for beginners. The explanations are clear, and the projects help solidify the concepts." – John D.</p>
+                    </div>
+
+                    <!-- Related Courses -->
+                    <h2 style="color: var(--primary-color); margin-top: 3rem;">Explore More Courses</h2>
+                    <div class="related-courses-row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/python.png" alt="Python Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">Complete Python Bootcamp: Go from zero to hero in Python 3</h3>
+                                    <p class="instructor">By Jose Portilla</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.8 (50,000)</div>
+                                    <p class="price">₹599 <span class="old-price">₹799</span></p>
+                                    <button class="enroll-btn" aria-label="Add Python course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/Javascript.png" alt="JavaScript Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">The Complete JavaScript Course 2025</h3>
+                                    <p class="instructor">By Jonas Schmedtmann</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.8 (185,432)</div>
+                                    <p class="price">₹699 <span class="old-price">₹999</span></p>
+                                    <button class="enroll-btn" aria-label="Add JavaScript course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="related-course-card">
+                                <img src="/index-courses/course logos/java.png" alt="Java Course" class="course-image" loading="lazy">
+                                <div class="course-content">
+                                    <h3 class="course-title">Java Programming for Complete Beginners [2025]</h3>
+                                    <p class="instructor">By Ranga Karanam</p>
+                                    <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (120,000)</div>
+                                    <p class="price">₹749 <span class="old-price">₹899</span></p>
+                                    <button class="enroll-btn" aria-label="Add Java course to cart"><span class="a_enroll">Add to Cart</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar (Desktop Only) -->
+            <div class="col-lg-4">
+                <div class="sticky-buy-placeholder"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Modals -->
+    <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLabel">Preview: Welcome to the Course</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>In this introductory lecture, Jason Fedin welcomes you to the course and gives an overview of what you'll learn. Get ready to dive into the world of C programming!</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Video+Preview" alt="Video Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalCalculator" tabindex="-1" aria-labelledby="previewModalCalculatorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalCalculatorLabel">Preview: Simple Calculator Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build a simple calculator to practice variables, data types, and basic arithmetic operations in C.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Calculator+Preview" alt="Calculator Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalGame" tabindex="-1" aria-labelledby="previewModalGameLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalGameLabel">Preview: Number Guessing Game Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Create a number guessing game to master control flow and user input handling in C.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Game+Preview" alt="Game Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalLibrary" tabindex="-1" aria-labelledby="previewModalLibraryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLibraryLabel">Preview: Math Utility Library Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Develop a math utility library to practice functions and modular programming in C.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Library+Preview" alt="Library Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalGrades" tabindex="-1" aria-labelledby="previewModalGradesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalGradesLabel">Preview: Student Grade Manager Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build a student grade manager to practice arrays and data processing in C.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Grades+Project+Preview" alt="Grades Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalDynamic" tabindex="-1" aria-labelledby="previewModalDynamicLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalDynamicLabel">Preview: Dynamic Array Manager Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Create a dynamic array manager to master pointers and dynamic memory allocation in C.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Dynamic+Array+Preview" alt="Dynamic Array Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalText" tabindex="-1" aria-labelledby="previewModalTextLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalTextLabel">Preview: Text Analyzer Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Develop a text analyzer to practice string manipulation in C.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x180?text=Text+Analyzer+Preview" alt="Text Analyzer Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalDatabase" tabindex="-1" aria-labelledby="previewModalDatabaseLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalDatabaseLabel">Preview: Employee Database Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build an employee database to practice structures and data organization in C.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=Database+Project+Preview" alt="Database Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalToDo" tabindex="-1" aria-labelledby="previewModalToDoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalToDoLabel">Preview: File-Based To-Do List Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Create a file-based to-do list to practice file input/output in C.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x300?text=ToDo+List+Preview" alt="To-Do List Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="previewModalLibrarySystem" tabindex="-1" aria-labelledby="previewModalLibrarySystemLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background: rgba(42, 42, 42, 0.9); color: var(--text-light);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="previewModalLibrarySystemLabel">Preview: Library Management System Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Build a console-based library management system to apply all C programming skills learned in the course.</p>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/600x180?text=Library+System+Preview" alt="Library System Preview" class="img-fluid" loading="lazy">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+        <div class="footer-grid">
+            <!-- Company Info -->
+            <div class="footer-box">
+                <h2>CODE-PULSE</h2>
+                <p><strong>NYXACADEMY TECHNOLOGIES PVT. LTD.</strong></p>
+                <p>Innovative products built for progress. Our mission is to empower small and medium businesses through intelligent tech solutions.</p>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>📞 <a href="tel:+91630xxxxxxx">+91 630xxxxxxx</a></p>
+                <p>✉️ <a href="mailto:info@code-pulse.in">info@code-pulse.in</a></p>
+                <p>📍 Bengaluru, India – 560101</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="footer-credits">
+            <p>© 2025 CODE-PULSE. All rights reserved.</p>
+            <p>Powered by <a href="https://www.odoo.com">Odoo</a> – #1 Open Source eCommerce</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script class="code-rain" src="/index-courses/background animation.js"></script>
+</body>
+</html>
