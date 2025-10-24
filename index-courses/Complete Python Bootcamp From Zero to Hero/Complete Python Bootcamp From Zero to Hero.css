@@ -84,14 +84,14 @@ body {
     font-weight: 500;
     padding: 10px 15px !important;
     margin: 0 5px;
-    border-radius: 20px;
     transition: all 0.3s ease;
     text-decoration: none !important;
+    background: transparent !important;
 }
 
 .nav-link:hover {
-    color: var(--dark-bg) !important;
-    background-color: #ffffff !important;
+    color: var(--primary-color) !important;
+    background: transparent !important;
 }
 
 .navbar-toggler {

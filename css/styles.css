@@ -70,22 +70,43 @@ body {
   font-weight: 500;
   padding: 10px 15px !important;
   margin: 0 5px;
-  border-radius: 20px;
   transition: all 0.3s ease;
   text-decoration: none !important;
+  background: transparent !important;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 5px;
+  left: 50%;
+  background: var(--primary-color);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
 }
 
 .nav-link:hover {
-  color: var(--dark-bg) !important;
-  background-color: #ffffff !important;
-  text-decoration: none !important;
+  color: var(--primary-color) !important;
+  transform: translateY(-1px);
+  background: transparent !important;
+  text-shadow: 0 0 10px rgba(102, 252, 241, 0.6);
 }
 
-/* Active State (optional styling) */
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Active State */
 .active {
-  color: var(--dark-bg) !important; /* white text */
-  background-color: var(--primary-color) !important;
-  border-radius: 20px;
+  color: var(--primary-color) !important;
+  background: transparent !important;
+}
+
+.active::after {
+  width: 80%;
 }
 
 /* Navbar Toggler */
@@ -261,15 +282,19 @@ body {
     flex-wrap: nowrap;
     gap: 20px;
     overflow-x: auto;
-    padding: 0 30px; /* Increased padding to accommodate button spacing */
+    padding: 0 0; /* removed outer horizontal padding so cards align with container edges */
     align-items: stretch;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     user-select: none;
     cursor: grab;
     scrollbar-width: none;
+    transition: transform 0.3s ease-out;
+    will-change: transform;
+    -webkit-font-smoothing: antialiased;
 }
+
 
 .course-list::-webkit-scrollbar {
     display: none;
@@ -277,6 +302,11 @@ body {
 
 .course-list:active {
     cursor: grabbing;
+    scale: 0.99;
+}
+
+.course-list:hover {
+    cursor: grab;
 }
 
 /* Course Card */
@@ -288,15 +318,13 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(102, 252, 241, 0.1);
     display: inline-block;
-    scroll-snap-align: start;
-    transition: all 0.3s ease;
+    scroll-snap-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center center;
+    will-change: transform;
 }
 
-.course-card:hover {
-    transform: none;
-    border-color: rgba(102, 252, 241, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
+
 
 /* Course Image */
 .course-image {
@@ -380,34 +408,63 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(42, 42, 42, 0.7);
-    border: 1px solid rgba(102, 252, 241, 0.3);
+    background: rgba(42, 42, 42, 0.9);
+    border: 2px solid rgba(102, 252, 241, 0.3);
     color: var(--primary-color);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     font-size: 1.2rem;
     cursor: pointer;
     z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(4px);
+    opacity: 1;
 }
 
 .slide-btn:hover {
-    background: var(--primary-color);
+    /* neutral hover fallback, per-button hover will override */
+    background: rgba(255,255,255,0.06);
+    color: var(--primary-color);
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    border-color: rgba(255,255,255,0.06);
+}
+
+.slide-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.slide-btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.left-btn, .right-btn {
+    padding-left: 6px;
+    padding-right: 6px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: var(--dark-bg);
-    transform: translateY(-50%) scale(1.1);
-    box-shadow: 0 5px 15px rgba(102, 252, 241, 0.3);
+    border-color: rgba(34,197,94,0.12);
 }
 
 .left-btn {
-    left: -60px; /* Increased spacing to match the edited image */
+    left: -80px; /* place button further outward so it sits outside the card area */
 }
 
 .right-btn {
-    right: -60px; /* Increased spacing to match the edited image */
+    right: -80px; /* place button further outward so it sits outside the card area */
+}
+
+.left-btn:hover, .right-btn:hover {
+    background: var(--dark-bg) !important;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 18px rgba(102,252,241,0.25);
 }
 
 

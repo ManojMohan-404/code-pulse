@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/course-logos.css">
    <!-- Bootstrap CSS for Navbar -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for Icons -->
@@ -18,6 +20,11 @@
 
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    
     <!-- Particles.js Background -->
     <div id="particles-js"></div>
 
@@ -120,8 +127,8 @@
         <div class="container">
             <h2 class="text-center mb-4">Featured Courses</h2>
             <div class="course-wrapper">
-                <button class="slide-btn left-btn" aria-label="Previous course"><i class="fas fa-chevron-left"></i></button>
-                <button class="slide-btn right-btn" aria-label="Next course"><i class="fas fa-chevron-right"></i></button>
+                <button class="slide-btn left-btn" aria-label="Previous course" style="opacity: 1;"><i class="fas fa-chevron-left"></i></button>
+                <button class="slide-btn right-btn" aria-label="Next course" style="opacity: 1;"><i class="fas fa-chevron-right"></i></button>
                 <div class="course-list" role="region" aria-label="Courses carousel">
                     <!-- Course Card 1 -->
                     <div class="course-card">
@@ -180,13 +187,83 @@
                     </div>
                     <!-- Course Card 6 -->
                     <div class="course-card">
-                        <img src="index-courses/course logos/web development.png" alt="Tailwind CSS Course" class="course-image">
+                        <img src="index-courses/course logos/web development.png" alt="Web Development Course" class="course-image">
                         <div class="course-content">
                             <h3 class="course-title">The Complete Web Development Bootcamp</h3>
                             <p class="instructor">by Dr. Angela Yu</p>
                             <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.4 (710)</div>
                             <p class="price">₹499 <span class="old-price">₹749</span></p>
                             <button class="enroll-btn" aria-label="Enroll in The Complete Web Development Bootcamp"><a class="a_enroll" href="index-courses/The Complete Web Development Bootcamp/The Complete Web Development Bootcamp.html">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 7 -->
+                    <div class="course-card">
+                        <div class="course-logo react-logo">
+                            <i class="fab fa-react"></i>
+                            <div class="logo-text">React & Redux</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">React - The Complete Guide 2025 (with Redux)</h3>
+                            <p class="instructor">by Maximilian Schwarzmüller</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.8 (2150)</div>
+                            <p class="price">₹799 <span class="old-price">₹1299</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in React - The Complete Guide"><a class="a_enroll" href="#">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 8 -->
+                    <div class="course-card">
+                        <div class="course-logo data-science-logo">
+                            <i class="fas fa-brain"></i>
+                            <div class="logo-text">Data Science & ML</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Data Science and Machine Learning Bootcamp</h3>
+                            <p class="instructor">by Jose Portilla</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.6 (1820)</div>
+                            <p class="price">₹899 <span class="old-price">₹1499</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Data Science and Machine Learning Bootcamp"><a class="a_enroll" href="#">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 9 -->
+                    <div class="course-card">
+                        <div class="course-logo node-logo">
+                            <i class="fab fa-node-js"></i>
+                            <div class="logo-text">Node.js</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Node.js Developer Course - From Zero to Expert</h3>
+                            <p class="instructor">by Andrew Mead</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.7 (1580)</div>
+                            <p class="price">₹649 <span class="old-price">₹999</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Node.js Developer Course"><a class="a_enroll" href="#">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 10 -->
+                    <div class="course-card">
+                        <div class="course-logo flutter-logo">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="logo-text">Flutter & Dart</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Flutter & Dart - The Complete Mobile App Development</h3>
+                            <p class="instructor">by Maximilian Schwarzmüller</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.9 (1290)</div>
+                            <p class="price">₹749 <span class="old-price">₹1199</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in Flutter & Dart Course"><a class="a_enroll" href="#">Enroll Now</a></button>
+                        </div>
+                    </div>
+                    <!-- Course Card 11 -->
+                    <div class="course-card">
+                        <div class="course-logo devops-logo">
+                            <i class="fas fa-server"></i>
+                            <div class="logo-text">DevOps</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">DevOps Mastery: CI/CD, Docker & Kubernetes</h3>
+                            <p class="instructor">by Stephen Grider</p>
+                            <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5 (980)</div>
+                            <p class="price">₹849 <span class="old-price">₹1399</span></p>
+                            <button class="enroll-btn" aria-label="Enroll in DevOps Mastery Course"><a class="a_enroll" href="#">Enroll Now</a></button>
                         </div>
                     </div>
                 </div>
@@ -229,5 +306,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/PromotionalSlides.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/courseCarousel.js"></script>
 </body>
 </html>
